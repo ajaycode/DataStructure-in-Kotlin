@@ -1,10 +1,13 @@
 # TODO
+1. UPDATE Node
+2. DELETE Node
 
-1. CREATE
-2. READ
-3. UPDATE
-4. DELETE
 
+# DSL Preview
+
+<img src="treeDSL.jpeg">
+
+# Notes on Trees
 
 # Tress Data Structure
 - Tree is Collection of `nodes` + `edge`
@@ -53,7 +56,7 @@
 |   D - Child -> B      |                           |   
 |   F - Child -> B      |                           |
 |----------------------------------------------------------------------------------|
-|   [Ancestors]          |       [Degree]        |   [internal/external-nodes]
+|   [Ancestors]             |       [Degree]        |   [internal/external-nodes]
 |   D - ancestors -> B,A    |   A - degree -> 2     |     A - internal/non-leaf
 |   F - ancestors -> B,A    |   B - degree -> 2     |     B - internal/non-leaf
 |   B - ancestors -> A      |   C - degree -> 0     |     C - external/leaf
@@ -86,7 +89,7 @@ Example : T(3) = __T(0)xT(2) + T(1)xT(1) + T(2)xT(0) = 1x2 + 1x1 + 2x1 = 2+1+2 =
 
 ### Total number of trees with max height in binary trees
 ```
-    T(MaxHeight(n)) = 2^n-1
+    T(MaxHeight(n)) = 2^(n-1)
 ``` 
 Example : T(4) = __2^3 = 8__
 
@@ -126,7 +129,7 @@ can be represented using `List` or `LinkedList`
                 (D) (E)      (F) (G)   
 ```
 
-List relationship
+#### List relationship
 ```
     [A] [B] [C] [D] [E] [F] [G] 
      0   1   2   3   4   5   6
@@ -154,7 +157,7 @@ List relationship
     parent = floor(i / 2)
 ```
 
-Linked relationship
+#### Linked relationship
 ```
                     Node
     -----------------------------------------
@@ -168,5 +171,7 @@ Linked relationship
             /                       \
         [X][D][X]                 [X][E][X]
 ```
+
+
 
 
